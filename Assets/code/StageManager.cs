@@ -43,6 +43,11 @@ public class StageManager : MonoBehaviour
         onPause += PauseGame;
         onResume += ResumeGame;
         onUseAttempt += UseAttempt;
+
+        if(currentStageNumber == 3)
+        {
+            ShowStartMessage();
+        }
     }
 
     private void OnDestroy()
@@ -135,7 +140,7 @@ private void UpdateTimer()
     {
         DataManager.instance.clearStage(currentStageNumber);
         isStageActive = false;
-        dialogManager.showClearDialog();
+        dialogManager.showClearMessageDialog();
     }
 
     // 게임 일시정지
@@ -143,6 +148,14 @@ private void UpdateTimer()
     {
         Time.timeScale = 0;
         dialogManager.showPauseDialog();
+        isStageActive = false;
+    }
+
+    // 게임 일시정지
+    public void ShowStartMessage()
+    {
+        Time.timeScale = 0;
+        dialogManager.showStartMessageDialog();
         isStageActive = false;
     }
 

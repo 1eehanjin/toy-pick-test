@@ -10,7 +10,11 @@ public class DialogManager : MonoBehaviour
     private GameObject dialogBackground;
     private GameObject pauseDialog;
     private GameObject clearDialog;
+    private GameObject clearMessageDialog;
+    private GameObject startMessageDialog;
     private GameObject failDialog;
+
+    public Sprite[] clearMessageSprites;
     
 
 
@@ -19,10 +23,18 @@ public class DialogManager : MonoBehaviour
         dialog = GameObject.Find("Dialog");
         dialogBackground = dialog.transform.Find("DialogBackground").gameObject;
         clearDialog = dialog.transform.Find("ClearDialog").gameObject;
+        clearMessageDialog = dialog.transform.Find("ClearMessageDialog").gameObject;
+        startMessageDialog = dialog.transform.Find("StartMessageDialog").gameObject;
         failDialog = dialog.transform.Find("FailDialog").gameObject;
         pauseDialog = dialog.transform.Find("PauseDialog").gameObject;
     }
-    
+
+    public void showStartMessageDialog()
+    {
+
+        startMessageDialog.SetActive(true);
+        dialogBackground.SetActive(true);
+    }
 
     public void showPauseDialog()
     {
@@ -37,9 +49,18 @@ public class DialogManager : MonoBehaviour
         dialogBackground.SetActive(true);
     }
 
+    public void showClearMessageDialog()
+    {
+        Image imageToChange = clearMessageDialog.transform.GetChild(0).GetComponent<Image>();
+        int currentStageNumber = DataManager.instance.gameData.currentStageNumber;
+        imageToChange.sprite = clearMessageSprites[currentStageNumber];
+        clearMessageDialog.SetActive(true);
+        dialogBackground.SetActive(true);
+    }
+
     public void showFailDialog()
     {
-
+        
         failDialog.SetActive(true);
         dialogBackground.SetActive(true);
 
@@ -50,6 +71,8 @@ public class DialogManager : MonoBehaviour
         pauseDialog.SetActive(false);
         clearDialog.SetActive(false);
         failDialog.SetActive(false);
+        startMessageDialog.SetActive(false);
+        clearMessageDialog.SetActive(false);
         dialogBackground.SetActive(false);
     }
 
