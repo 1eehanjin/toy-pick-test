@@ -180,19 +180,18 @@ public class Manager_ClawMovement2 : MonoBehaviour
     private void clawMove()
     {
         Vector3 direction;
-        //if (isRotated)
-        //{
+        if (isRotated)
+        {
 
-        //    direction = Vector3.forward * variableJoystick.Horizontal + Vector3.left * variableJoystick.Vertical;
+            direction = Vector3.forward * variableJoystick.Horizontal + Vector3.left * variableJoystick.Vertical;
 
-        //}
-        //else
-        //{
-        //    direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
+        }
+        else
+        {
+            direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
 
-        //}
-        direction = Camera.main.transform.TransformDirection(new Vector3(-variableJoystick.Vertical, 0f, variableJoystick.Horizontal));
-        direction.y = 0f;
+        }
+
         clawHolder.Translate(direction * movementSpeed * 1 * Time.deltaTime);
 
         float clampedX = Mathf.Clamp(clawHolder.position.x, boundaryX_Left, boundaryX_Right);

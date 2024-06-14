@@ -1982,7 +1982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 19, y: -206.00003}
+  m_AnchoredPosition: {x: 19, y: -206}
   m_SizeDelta: {x: 62, y: 94}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &215366800678634413
@@ -3846,6 +3846,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
         type: 3}
+      propertyPath: gameData.stageDatas.Array.data[0].limitTime
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
+        type: 3}
+      propertyPath: gameData.stageDatas.Array.data[2].limitTime
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
+        type: 3}
+      propertyPath: gameData.stageDatas.Array.data[3].limitTime
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
+        type: 3}
       propertyPath: gameData.stageDatas.Array.data[6].stageName
       value: "\uC740\uD558\uC218"
       objectReference: {fileID: 0}
@@ -3856,8 +3871,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
         type: 3}
+      propertyPath: gameData.stageDatas.Array.data[0].maxAttempts
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
+        type: 3}
       propertyPath: gameData.stageDatas.Array.data[1].stageNumber
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
+        type: 3}
+      propertyPath: gameData.stageDatas.Array.data[2].maxAttempts
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
+        type: 3}
+      propertyPath: gameData.stageDatas.Array.data[3].maxAttempts
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8492770279536685943, guid: 802fa7a4e4d2540939401f93e9682152,
         type: 3}

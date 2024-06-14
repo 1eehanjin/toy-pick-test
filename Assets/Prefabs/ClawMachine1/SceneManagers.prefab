@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5413724831291628264}
   - component: {fileID: 2899623079351307262}
   - component: {fileID: 5666194153321243392}
+  - component: {fileID: 1417308725792416516}
   m_Layer: 0
   m_Name: SceneManagers
   m_TagString: Untagged
@@ -47,6 +48,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71457178e67f74ffb8819d5434eae1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMessageSprites:
+  - {fileID: 21300000, guid: 472cbf8bb95f842baa1a659b0a908758, type: 3}
+  - {fileID: 21300000, guid: e852f3bc25a794e33865d2c7c2aa58f5, type: 3}
+  - {fileID: 21300000, guid: 10052425edbe140a192457d7f577c368, type: 3}
+  - {fileID: 21300000, guid: 57f13c648e53a4e0bb422415c128a6e2, type: 3}
+  - {fileID: 21300000, guid: deae3dd3e4a3240c8822f4b5ca8c395c, type: 3}
+  - {fileID: 21300000, guid: d8f57945ee2464a0db57dbec179c246d, type: 3}
   clearMessageSprites:
   - {fileID: 21300000, guid: 0ad8ece20d9a845089df02014bfea533, type: 3}
   - {fileID: 21300000, guid: 79c61cc1915254a75a864e0617af597b, type: 3}
@@ -66,8 +74,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3c419e5ad684ff8be491affaf4c4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dollSettings: []
-  skyboxMaterials: []
+  dollSettings:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  machineParts: []
+  skyboxMaterials:
+  - {fileID: 2100000, guid: a1bf8c0782c5b47c2af078eda71b681a, type: 2}
+  - {fileID: 2100000, guid: edf01c29390124b16a4245348393b45e, type: 2}
+  - {fileID: 2100000, guid: 50a76dd66ce4440bda8f94155f08ae7e, type: 2}
+  - {fileID: 2100000, guid: e25932220e70b4d5bbb6959f776b68f1, type: 2}
+  - {fileID: 2100000, guid: 47b8cba83758842b28a9d176ac0ab694, type: 2}
+  - {fileID: 2100000, guid: 1bb9576c9ca55422d81d78c631621b7b, type: 2}
   currentStageNumber: 0
   currentStageData:
     machineType: 0
@@ -107,3 +125,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9637739e2e870458a868c9ee6b93cdc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1417308725792416516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910898291468154585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e254c769914d441986f76dcd3615e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlPanelSprites:
+  - {fileID: 21300000, guid: 66c5d9dcc46054e17a7e852423420d75, type: 3}
+  - {fileID: 21300000, guid: 5ee31474a89bb43ffb0fd1577d11599c, type: 3}
+  - {fileID: 21300000, guid: f05465ddad954486ba556360e0f29089, type: 3}
+  - {fileID: 21300000, guid: f85323dee44b847909da2c1e803b7dfb, type: 3}
+  - {fileID: 21300000, guid: 678c0906a99084b01acecd7fb4df49f1, type: 3}
+  - {fileID: 21300000, guid: f05465ddad954486ba556360e0f29089, type: 3}
+  clawButtonSprites: []
+  leftCameraButtonSprites: []
+  rightCameraButtonSprites: []
+  joystickHandleSprites: []
+  joystickPanelSprites: []

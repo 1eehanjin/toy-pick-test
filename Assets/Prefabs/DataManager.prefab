@@ -50,37 +50,49 @@ MonoBehaviour:
     - machineType: 0
       stageNumber: 0
       settingNumber: 0
-      limitTime: 50
-      maxAttempts: 5
+      limitTime: 60
+      maxAttempts: 4
       stageName: "\uB2F9\uADFC \uBC2D"
+      dollName: 
+      dollText: 
     - machineType: 0
       stageNumber: 1
       settingNumber: 1
-      limitTime: 100
-      maxAttempts: 10
+      limitTime: 80
+      maxAttempts: 5
       stageName: "\uB09C\uD30C\uC120"
+      dollName: 
+      dollText: 
     - machineType: 0
       stageNumber: 2
       settingNumber: 2
-      limitTime: 100
-      maxAttempts: 10
+      limitTime: 80
+      maxAttempts: 5
       stageName: "\uC5F0\uC78E \uAC1C\uC6B8"
+      dollName: 
+      dollText: 
     - machineType: 1
       stageNumber: 3
       settingNumber: 0
-      limitTime: 100
-      maxAttempts: 10
+      limitTime: 80
+      maxAttempts: 5
       stageName: "\uC740\uD558\uC218"
+      dollName: 
+      dollText: 
     - machineType: 1
       stageNumber: 4
       settingNumber: 1
       limitTime: 100
       maxAttempts: 10
       stageName: "\uAD6C\uB984\uB098\uB77C"
+      dollName: 
+      dollText: 
     - machineType: 1
       stageNumber: 5
       settingNumber: 2
       limitTime: 100
       maxAttempts: 10
       stageName: "\uB300\uB098\uBB34 \uC232"
+      dollName: 
+      dollText: 
     currentStageNumber: 0

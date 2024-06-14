@@ -14,11 +14,11 @@ public class DialogManager : MonoBehaviour
     private GameObject startMessageDialog;
     private GameObject failDialog;
 
+    public Sprite[] startMessageSprites;
     public Sprite[] clearMessageSprites;
-    
 
 
-    void Start()
+    void Awake()
     {
         dialog = GameObject.Find("Dialog");
         dialogBackground = dialog.transform.Find("DialogBackground").gameObject;
@@ -31,7 +31,9 @@ public class DialogManager : MonoBehaviour
 
     public void showStartMessageDialog()
     {
-
+        Image imageToChange = startMessageDialog.transform.GetChild(0).GetComponent<Image>();
+        int currentStageNumber = DataManager.instance.gameData.currentStageNumber;
+        imageToChange.sprite = startMessageSprites[currentStageNumber];
         startMessageDialog.SetActive(true);
         dialogBackground.SetActive(true);
     }
@@ -45,6 +47,7 @@ public class DialogManager : MonoBehaviour
 
     public void showClearDialog()
     {
+
         clearDialog.SetActive(true);
         dialogBackground.SetActive(true);
     }

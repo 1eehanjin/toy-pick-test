@@ -143,6 +143,6 @@ public class StageSelectManager : MonoBehaviour
 
     public void LoadStageScene()
     {
-        SceneManager.LoadScene(DataManager.instance.gameData.stageDatas[DataManager.instance.gameData.currentStageNumber].machineType.ToString());
+        SceneManager.LoadScene("GameScene"+DataManager.instance.gameData.stageDatas[DataManager.instance.gameData.currentStageNumber].machineType.ToString());
     }
 }

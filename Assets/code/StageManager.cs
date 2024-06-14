@@ -16,6 +16,7 @@ public class StageManager : MonoBehaviour
     public static Action onUseAttempt;
 
     public GameObject[] dollSettings;
+    public GameObject[] machineParts;
     public Material[] skyboxMaterials;
     public int currentStageNumber;
     public StageData currentStageData;
@@ -44,10 +45,7 @@ public class StageManager : MonoBehaviour
         onResume += ResumeGame;
         onUseAttempt += UseAttempt;
 
-        if(currentStageNumber == 3)
-        {
-            ShowStartMessage();
-        }
+        ShowStartMessage();
     }
 
     private void OnDestroy()
@@ -78,6 +76,7 @@ public class StageManager : MonoBehaviour
         UpdateUI();
         ChangeSkybox();
         isStageActive = true;
+        machineParts[currentStageData.settingNumber].SetActive(true);
         dollSettings[currentStageData.settingNumber].SetActive(true);
         Time.timeScale = 1;
     }

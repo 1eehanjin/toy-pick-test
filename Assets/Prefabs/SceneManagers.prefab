@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3669879569323375196}
   - component: {fileID: 2020989743380804719}
   - component: {fileID: 996480403202123839}
+  - component: {fileID: 5244274790259808341}
   m_Layer: 0
   m_Name: SceneManagers
   m_TagString: Untagged
@@ -47,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dollSettings: []
+  machineParts: []
   skyboxMaterials: []
   currentStageNumber: 0
   currentStageData:
@@ -87,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71457178e67f74ffb8819d5434eae1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMessageSprites: []
   clearMessageSprites:
   - {fileID: 21300000, guid: 0ad8ece20d9a845089df02014bfea533, type: 3}
   - {fileID: 21300000, guid: 79c61cc1915254a75a864e0617af597b, type: 3}
@@ -94,3 +97,39 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fbc79996517fc4d86b7acca6693df0e9, type: 3}
   - {fileID: 21300000, guid: 43cc221fbd83648be89a72bd55866340, type: 3}
   - {fileID: 21300000, guid: 86211ff037d84409e9a82c0a8f1fd54d, type: 3}
+--- !u!114 &5244274790259808341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066015725982024525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e254c769914d441986f76dcd3615e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlPanelSprites:
+  - {fileID: 21300000, guid: 66c5d9dcc46054e17a7e852423420d75, type: 3}
+  - {fileID: 21300000, guid: f05465ddad954486ba556360e0f29089, type: 3}
+  - {fileID: 21300000, guid: 5ee31474a89bb43ffb0fd1577d11599c, type: 3}
+  - {fileID: 21300000, guid: f85323dee44b847909da2c1e803b7dfb, type: 3}
+  - {fileID: 21300000, guid: 678c0906a99084b01acecd7fb4df49f1, type: 3}
+  - {fileID: 21300000, guid: f05465ddad954486ba556360e0f29089, type: 3}
+  clawButtonSprites:
+  - {fileID: 21300000, guid: a4811e1644e0043aaafb2183de6c601c, type: 3}
+  - {fileID: 21300000, guid: 0c514abf3f7b949838b169be3a1e3a20, type: 3}
+  - {fileID: 21300000, guid: a4811e1644e0043aaafb2183de6c601c, type: 3}
+  - {fileID: 21300000, guid: 0c514abf3f7b949838b169be3a1e3a20, type: 3}
+  - {fileID: 21300000, guid: 0c514abf3f7b949838b169be3a1e3a20, type: 3}
+  - {fileID: 21300000, guid: a4811e1644e0043aaafb2183de6c601c, type: 3}
+  leftCameraButtonSprites:
+  - {fileID: 21300000, guid: 093e4fd172c4541238018a45e847d6c7, type: 3}
+  - {fileID: 21300000, guid: 093e4fd172c4541238018a45e847d6c7, type: 3}
+  - {fileID: 21300000, guid: 093e4fd172c4541238018a45e847d6c7, type: 3}
+  - {fileID: 21300000, guid: 093e4fd172c4541238018a45e847d6c7, type: 3}
+  - {fileID: 21300000, guid: e1403543a72844594b0fa31a1b99c262, type: 3}
+  - {fileID: 21300000, guid: 093e4fd172c4541238018a45e847d6c7, type: 3}
+  rightCameraButtonSprites: []
+  joystickHandleSprites: []
+  joystickPanelSprites: []

@@ -8,7 +8,6 @@ public class PrizeCatcher2_ClawMachine : MonoBehaviour
 
     [Header("Score Settings")]
     public ParticleSystem coinExplosion;
-    public Manager_ClawMovement2 managerClawMachine;
 
     public void OnTriggerEnter(Collider other)
     {

@@ -25,7 +25,7 @@ public class Manager_ClawMovement : MonoBehaviour {
     public int failRate = 0;
 
     [HideInInspector]
-    // This is false when we are droping / rasing the claw.
+    // This is false when we are droping / rasing the claw. 
     public bool canMove = true;
 
     [HideInInspector]
@@ -174,8 +174,16 @@ public class Manager_ClawMovement : MonoBehaviour {
     private void clawMove()
     {
         Vector3 direction;
-        direction = Camera.main.transform.TransformDirection(new Vector3(variableJoystick.Horizontal, 0f, variableJoystick.Vertical));
-        direction.y = 0f;
+        if (isRotated)
+        {
+            direction = Vector3.forward * variableJoystick.Horizontal + Vector3.left * variableJoystick.Vertical;
+
+        }
+        else
+        {
+            direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
+
+        }
         clawHolder.Translate(direction * movementSpeed * 1 * Time.deltaTime);
 
         float clampedX = Mathf.Clamp(clawHolder.position.x, boundaryX_Left, boundaryX_Right);
