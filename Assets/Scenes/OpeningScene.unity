@@ -599,62 +599,38 @@ MonoBehaviour:
   backgroundImage: {fileID: 287385650}
   storyText: {fileID: 1460231711}
   sceneSettings:
-  - backgroundImage: {fileID: 21300000, guid: 2a3508c472beb4ed0bd4c7a3f74aea51, type: 3}
-    storyText: "\uD55C\uB54C \uC138\uACC4 \uCD5C\uB300\uC758 \uC778\uD615 \uC81C\uC870\uC5C5\uCCB4\uC600\uB358
-      000\uACF5\uC7A5\uC740 \uC5B4\uB9B0\uC774\uB4E4\uC5D0\uAC8C \uAE30\uC068\uC744
-      \uC8FC\uB294 \uAC83\uC744 \uC0AC\uBA85\uC73C\uB85C \uC0BC\uACE0 \uC788\uC5C8\uC5B4"
-    enablePan: 1
-    panSpeed: 15
-    cameraZoomTime: 5
-    initialBackgroundPosition: {x: -180, y: 0, z: 0}
-    maxPanDistance: 350
   - backgroundImage: {fileID: 21300000, guid: eff7a0f734a014e6997c6669b0de4fee, type: 3}
-    storyText: "\uADC0\uC5FD\uACE0 \uC0AC\uB791\uC2A4\uB7EC\uC6B4 \uC778\uD615\uB4E4\uC774
-      \uB9CE\uC740 \uC0AC\uB791\uC744 \uBC1B\uC73C\uBA74\uC11C \uACF5\uC7A5\uC740
-      \uACC4\uC18D \uC131\uC7A5\uD574\uAC14\uC5B4."
+    storyText: "\uC61B\uB0A0 \uC61B\uC801, \uC778\uD615 \uACF5\uC7A5\uC740 \uC5B4\uB9B0\uC774\uB4E4\uC5D0\uAC8C 
+      \uD589\uBCF5\uC744 \uC8FC\uB294 \uAFC8\uC758 \uACF5\uC7A5\uC774\uC5C8\uC5B4"
     enablePan: 1
     panSpeed: 15
     cameraZoomTime: 5
     initialBackgroundPosition: {x: -180, y: 0, z: 0}
     maxPanDistance: 350
   - backgroundImage: {fileID: 21300000, guid: ff143f824095f408f91ffe3a9fc99986, type: 3}
-    storyText: "\uD558\uC9C0\uB9CC \uACF5\uC7A5\uC758 \uC0AC\uC7A5\uC778 \uB450\uCE60\uC774
-      \uBA85\uC131\uACFC \uBD80\uC5D0 \uCDE8\uD574 \uC800\uC9C8\uC758 \uC7AC\uB8CC\uB97C
-      \uC0AC\uC6A9\uD558\uACE0, \uB178\uB3D9\uC790\uB4E4\uC5D0\uAC8C \uACFC\uB3C4\uD55C
-      \uADFC\uBB34\uB97C  \uAC15\uC694\uD558\uAE30 \uC2DC\uC791\uD588\uC5B4.."
-    enablePan: 1
-    panSpeed: 15
-    cameraZoomTime: 5
-    initialBackgroundPosition: {x: -180, y: 0, z: 0}
-    maxPanDistance: 350
-  - backgroundImage: {fileID: 21300000, guid: fde2871d55d67433ab3aef073dc81ae4, type: 3}
-    storyText: "\uC0AC\uC7A5\uC758 \uBB34\uB9AC\uD55C \uACBD\uC601 \uBC29\uC2DD\uC73C\uB85C
-      \uC778\uD574 \uC778\uD615\uC758 \uD488\uC9C8\uC774 \uB0AE\uC544\uC9C0\uC790
-      \uD68C\uC0AC\uB294 \uC2E0\uB8B0\uB97C \uC644\uC804\uD788 \uC783\uC5B4\uBC84\uB838\uACE0,
-      \uACB0\uAD6D \uACF5\uC7A5\uC740 \uD30C\uC0B0\uC744 \uC120\uC5B8\uD558\uACE0
-      \uBB38\uC744 \uB2EB\uAC8C\uB410\uC5B4.."
+    storyText: "\uADF8\uB7EC\uB098 \uC0AC\uC7A5 '\uB450\uCE60'\uC774 \uC695\uC2EC\uC744
+      \uBD80\uB9AC\uBA74\uC11C \uD488\uC9C8\uC774 \uB098\uBE60\uC84C\uACE0,  \uACB0\uAD6D
+      \uACF5\uC7A5\uC740 \uBB38\uC744 \uB2EB\uACE0 \uB9CE\uC740 \uC778\uD615\uB4E4\uC774
+      \uBC84\uB824\uC84C\uC5B4 "
     enablePan: 1
     panSpeed: 15
     cameraZoomTime: 5
     initialBackgroundPosition: {x: -180, y: 0, z: 0}
     maxPanDistance: 350
   - backgroundImage: {fileID: 21300000, guid: 430a21cc179224ef89631968bb204459, type: 3}
-    storyText: "\uD65C\uAE30\uCC3C\uB358 \uACF5\uC7A5\uC740 \uBC84\uB824\uC9C4 \uCC44
-      \uC624\uB79C \uC2DC\uAC04\uC774 \uD758\uB7EC, \uBC84\uB824\uC9C4 \uC778\uD615\uB4E4\uC774
-      \uB9C8\uBC95 \uAC19\uC740 \uD798\uC73C\uB85C \uC0DD\uBA85\uC744 \uC5BB\uAC8C
-      \uB418\uC5C8\uC5B4!! \uADF8\uB798\uC11C \uC6B0\uB9AC\uB97C \uC774\uB807\uAC8C
-      \uB9CC\uB4E0 \uC0AC\uC7A5\uC5D0\uAC8C \uBCF5\uC218\uD558\uB7EC\uAC08\uAC70\uC57C!"
+    storyText: "\uB9C8\uBC95\uCC98\uB7FC \uBC84\uB824\uC9C4 \uC778\uD615\uB4E4\uC774
+      \uC0DD\uBA85\uC744 \uC5BB\uC5C8\uACE0,  \uC774\uC81C \uADF8\uB4E4\uC740 '\uB450\uCE60'\uC5D0\uAC8C
+      \uBCF5\uC218\uD558\uB824 \uD574."
     enablePan: 1
     panSpeed: 15
     cameraZoomTime: 5
     initialBackgroundPosition: {x: -180, y: 0, z: 0}
     maxPanDistance: 350
   - backgroundImage: {fileID: 21300000, guid: 79a0ae1c1587c42cfba04b8e09820f0e, type: 3}
-    storyText: "\uD558\uC9C0\uB9CC \uB108\uB97C \uC81C\uC678\uD55C \uB2E4\uB978 \uC778\uD615\uB4E4\uC740
-      \uC778\uD615\uBF51\uAE30\uAE30\uACC4\uC5D0 \uAC07\uD600 \uD0C8\uCD9C\uD558\uC9C0
-      \uBABB\uD588\uC5B4.. \uB108\uAC00 \uAC07\uD600\uC788\uB294 \uC778\uD615\uB4E4\uC744
-      \uD0C8\uCD9C\uC2DC\uD0AC \uC218 \uC788\uB294 \uC720\uC77C\uD55C \uCE5C\uAD6C\uC57C...
-      \uC5B4\uC11C \uC6B0\uB9AC\uB97C \uB3C4\uC640\uC918!"
+    storyText: "\uADF8\uB7F0\uB370 \uB124 \uCE5C\uAD6C\uB4E4\uC774 \uC778\uD615\uBF51\uAE30
+      \uAE30\uACC4\uC5D0 \uAC07\uD614\uC5B4.  \uB108\uB9CC\uC774 \uC774\uB4E4\uC744
+      \uAD6C\uD560 \uC218 \uC788\uC5B4. \uC5B4\uC11C \uB3C4\uC640\uC918!  \uB124
+      \uCE5C\uAD6C\uB4E4\uC774 \uAE30\uB2E4\uB9AC\uACE0 \uC788\uC5B4!"
     enablePan: 1
     panSpeed: 15
     cameraZoomTime: 5
@@ -888,7 +864,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 17.5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

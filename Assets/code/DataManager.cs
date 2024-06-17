@@ -6,6 +6,7 @@ public class GameData
     public int[] stageCleared;
     public StageData[] stageDatas;
     public int currentStageNumber;
+    public bool alreadyAllCleared;
 
     public GameData()
     {

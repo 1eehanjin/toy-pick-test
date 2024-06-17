@@ -21,7 +21,11 @@ public class StageManager : MonoBehaviour
     public int currentStageNumber;
     public StageData currentStageData;
     public float remainingTime;
-    
+
+    public AudioSource audioSource;
+    public AudioClip failSound;
+    public AudioClip clearSound;
+
     public int remainingAttempts;
     private bool isStageActive = false;
     private DialogManager dialogManager;
@@ -125,14 +129,15 @@ private void UpdateTimer()
         }
     }
 
-    
-  
+
+
 
     // 스테이지 종료
     private void GameOverStage()
     {
         isStageActive = false;
         dialogManager.showFailDialog();
+        PlayFailSound();
     }
 
     public void ClearStage()
@@ -140,6 +145,23 @@ private void UpdateTimer()
         DataManager.instance.clearStage(currentStageNumber);
         isStageActive = false;
         dialogManager.showClearMessageDialog();
+        PlayClearSound();
+    }
+
+    private void PlayFailSound()
+    {
+        if (audioSource != null && failSound != null)
+        {
+            audioSource.PlayOneShot(failSound);
+        }
+    }
+
+    private void PlayClearSound()
+    {
+        if (audioSource != null && clearSound != null)
+        {
+            audioSource.PlayOneShot(clearSound);
+        }
     }
 
     // 게임 일시정지

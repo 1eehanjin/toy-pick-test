@@ -36,6 +36,7 @@ public class StageSelectManager : MonoBehaviour
     {
         UpdateStageSprites();
         BackgroundMusicManager.instance.ChangeBackgroundMusic1();
+
         // Text (TMP) 오브젝트에서 TextMeshProUGUI 컴포넌트 가져오기
         GameObject textObject = GameObject.Find(stageInfoTextObjectName);
         if (textObject != null)
@@ -50,6 +51,25 @@ public class StageSelectManager : MonoBehaviour
         {
             Debug.LogError($"'{stageInfoTextObjectName}' 이름을 가진 오브젝트를 찾을 수 없습니다.");
         }
+        GameObject sceneManagers = GameObject.Find("SceneManagers");
+        StageSelectSceneDialogManager dialogManager= sceneManagers.GetComponent<StageSelectSceneDialogManager>();
+        if (!DataManager.instance.gameData.alreadyAllCleared)
+        {
+            bool allClear = true;
+            for (int i = 0; i < stageSpriteRenderers.Length; i++)
+            {
+                if (DataManager.instance.getData(i) == 0)
+                {
+                    allClear = false;
+                }
+            }
+            if (allClear)
+            {
+                dialogManager.showAllClearDialog();
+                DataManager.instance.gameData.alreadyAllCleared = true;
+            }
+        }
+            
     }
 
     public void UpdateStageSprites()
